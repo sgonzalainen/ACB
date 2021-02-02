@@ -81,21 +81,30 @@ By looking at the silhouette, distortion and calinski_harabasz scores, I finally
 <div style="text-align:center"><img src="../img/calinski_harabasz.jpg" height= 200  /></div>
 
 
+## Results
+
+### Cluster_0
+
+#### Centroid
+
+| PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:------|:------|:------|:------|:------|:------|
+| -2.23 | -0.7  | 1.48  | -0.53 | -0.05 | 0.22  |
 
 
+#### Avg Stats
 
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 78.1        | 1.5       | 0.4       | 1.9       | 2.73    | 0.84     |
 
+| turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
+|:------------|:------------|:------------|:--------|:-------------|
+| 1.64        | 0.05        | 0.23        | 0.03    | 2.03         |
 
-
-
-
-
-
-
-
-
-
-
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 69.28       | 3.12      | 1.74      | 4.85      | 0.86    | 0.65     |
 
 
 
