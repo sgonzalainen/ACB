@@ -255,6 +255,51 @@ Versatile players who can play in the paint or outside with great percentages in
 
 
 
+### CLUSTER 4 - Top Outside Players
+
+#### Centroid
+
+| PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:------|:------|:------|:------|:------|:------|
+| -1.29 | -2.17 | -0.39 | 0.25  | -0.2  | 0.09  |
+
+
+
+
+#### Avg Stats
+
+
+| points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
+|:---------|:---------|:----------|:---------|:----------|:-----------|
+| 9.7      | 3.45     | 35.14     | 4.22     | 48.32     | 2.36       |
+
+
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 81.73       | 1.6       | 0.44      | 2.05      | 1.83    | 0.68     |
+
+
+| turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
+|:------------|:------------|:------------|:--------|:-------------|
+| 1.55        | 0.08        | 0.33        | 0.07    | 2.53         |
+
+
+
+Outside players (low PC1) who can easily score and contribute to the team (low PC2). They assume the role to score in the team (PC4) along with the ones in the Cluster 1. Most likely is the go-to player in a clutch situation. 
+
+
+
+#### Players in this Cluster:
+
+
+[Luka Doncic](http://www.acb.com/jugador/temporada-a-temporada/id/20210121)           |  [Sergio Llull](http://www.acb.com/jugador/temporada-a-temporada/id/20201774) |  [Juan Carlos Navarro](http://www.acb.com/jugador/temporada-a-temporada/id/20200515)
+:-------------------------:|:-------------------------: |:-------------------------:
+<a href= "https://www.youtube.com/watch?v=v_jpqQBPDd8&ab_channel=ACB"><img src="../img/luka.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=WI0vsXFeZ9c&ab_channel=ACB"><img src="../img/sergi.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=UUUQuPAzBUk&ab_channel=EUROLEAGUEBASKETBALL"><img src="../img/bomba.jpg" height= 200  /> </a>
+
+
+
+
+
 
 
 
