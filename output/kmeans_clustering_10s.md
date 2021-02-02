@@ -119,9 +119,46 @@ Typically associated with the position of point guards.
 
 [Albert Oliver](http://www.acb.com/jugador/temporada-a-temporada/id/20200483)           |  [Facu Campazzo](http://www.acb.com/jugador/temporada-a-temporada/id/20211331) |  [Raül López](http://www.acb.com/jugador/temporada-a-temporada/id/20200628)
 :-------------------------:|:-------------------------: |:-------------------------:
-<img src="../img/oliver.jpg" height= 200  />  |  <img src="../img/facu.jpg" height= 200  /> |  <img src="../img/raul.jpg" height= 200  />
+<a href= "https://www.youtube.com/watch?v=jWROIfozUak&ab_channel=ACB"><img src="../img/oliver.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=HF1pwwPlMLo&ab_channel=ACB"><img src="../img/facu.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=s_AWH0ILOsY&ab_channel=ACB"><img src="../img/raul.jpg" height= 200  /> </a>
 
 
+### CLUSTER 0 - Great Court Vision and Assist Leaders
+
+#### Centroid
+
+| PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:------|:------|:------|:------|:------|:------|
+| -2.23 | -0.7  | 1.48  | -0.53 | -0.05 | 0.22  |
+
+
+#### Avg Stats
+
+
+| points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
+|:---------|:---------|:----------|:---------|:----------|:-----------|
+| 6.34     | 2.59     | 30.88     | 2.95     | 45.11     | 1.53       |
+
+
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 78.1        | 1.5       | 0.4       | 1.9       | 2.73    | 0.84     |
+
+| turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
+|:------------|:------------|:------------|:--------|:-------------|
+| 1.64        | 0.05        | 0.23        | 0.03    | 2.03         |
+
+
+
+Players in this cluster have great court vision and easily find a teammate to assist. Their pass skills outstands above other aspects like scoring. They mainly play outside the 3 point line. 
+Typically associated with the position of point guards. 
+
+
+#### Players in this Cluster:
+
+
+[Albert Oliver](http://www.acb.com/jugador/temporada-a-temporada/id/20200483)           |  [Facu Campazzo](http://www.acb.com/jugador/temporada-a-temporada/id/20211331) |  [Raül López](http://www.acb.com/jugador/temporada-a-temporada/id/20200628)
+:-------------------------:|:-------------------------: |:-------------------------:
+<a href= "https://www.youtube.com/watch?v=jWROIfozUak&ab_channel=ACB"><img src="../img/oliver.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=HF1pwwPlMLo&ab_channel=ACB"><img src="../img/facu.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=s_AWH0ILOsY&ab_channel=ACB"><img src="../img/raul.jpg" height= 200  /> </a>
 
 
 
