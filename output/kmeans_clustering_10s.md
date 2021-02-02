@@ -45,7 +45,7 @@ Ok, so those 17 parameters features the players, but before applying clustering 
 
 But how many PCs? Let's keep the PCs that can attain at least the 80% of the variance. In this case was the first 6.
 
- <div style="text-align:center"><img src="../img/variance.jpg", height = 200px /></div>
+ <div style="text-align:center"><img src="../img/variance.jpg", height = 300px /></div>
 
  <div style="text-align:center"><img src="../img/vari.png",  /></div>
 
@@ -74,11 +74,11 @@ Ok, now in the new feature space, Kmeans clustering is applied. But again, how m
 
 By looking at the silhouette, distortion and calinski_harabasz scores, I finally ended up with **7** clusters.
 
-<div style="text-align:center"><img src="../img/silhouette.jpg" height= 200  /></div>
+<div style="text-align:center"><img src="../img/silhouette.jpg" height= 300  /></div>
 
-<div style="text-align:center"><img src="../img/distortion.jpg" height= 200   /></div>
+<div style="text-align:center"><img src="../img/distortion.jpg" height= 300   /></div>
 
-<div style="text-align:center"><img src="../img/calinski_harabasz.jpg" height= 200  /></div>
+<div style="text-align:center"><img src="../img/calinski_harabasz.jpg" height= 300  /></div>
 
 
 ## Results
