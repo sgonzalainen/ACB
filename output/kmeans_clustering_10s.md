@@ -110,7 +110,7 @@ By looking at the silhouette, distortion and calinski_harabasz scores, I finally
 
 
 
-Players in this cluster have great court vision and easily find a teammate to assist. Their pass skills outstands above other aspects like scoring. They mainly play outside the 3 point line. 
+Players in this cluster have great court vision and easily find a teammate to assist. Their pass skills outstands above other aspects like scoring (high PC3). They mainly play outside the 3 point line (low PC1). 
 Typically associated with the position of point guards. 
 
 
@@ -122,13 +122,58 @@ Typically associated with the position of point guards.
 <a href= "https://www.youtube.com/watch?v=jWROIfozUak&ab_channel=ACB"><img src="../img/oliver.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=HF1pwwPlMLo&ab_channel=ACB"><img src="../img/facu.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=s_AWH0ILOsY&ab_channel=ACB"><img src="../img/raul.jpg" height= 200  /> </a>
 
 
-### CLUSTER 0 - Great Court Vision and Assist Leaders
+### CLUSTER 1 - Top Forwards
 
 #### Centroid
 
 | PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
 |:------|:------|:------|:------|:------|:------|
-| -2.23 | -0.7  | 1.48  | -0.53 | -0.05 | 0.22  |
+| 3.63  | -1.57 | -0.05 | 0.18  | 0.13  | -0.32 |
+
+
+
+
+#### Avg Stats
+
+| points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
+|:---------|:---------|:----------|:---------|:----------|:-----------|
+| 9.39     | 0.65     | 18.24     | 6.14     | 54.8      | 2.97       |
+
+
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 69.28       | 3.12      | 1.74      | 4.85      | 0.86    | 0.65     |
+
+
+| turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
+|:------------|:------------|:------------|:--------|:-------------|
+| 1.56        | 0.49        | 0.4         | 0.56    | 2.93         |
+
+
+
+Players in this cluster play inside the paint (high PC1), with great skills to score (low PC2), get rebounds and occasionally if required are able to shoot and score 3 points. 
+
+
+
+
+#### Players in this Cluster:
+
+
+[Felipe Reyes](http://www.acb.com/jugador/temporada-a-temporada/id/20200355)           |  [Bojan Dubljevic](http://www.acb.com/jugador/temporada-a-temporada/id/20210254/tipo_id/1/competicion_id/1/fase_id/0#cuerpo) |  [Nikola Mirotic](http://www.acb.com/jugador/temporada-a-temporada/id/20202101)
+:-------------------------:|:-------------------------: |:-------------------------:
+<a href= "https://www.youtube.com/watch?v=W_kBWXDwnoU&ab_channel=ACB"><img src="../img/felipe.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=wK43q-Aj2_E&ab_channel=KonBasket"><img src="../img/bojan.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=xVZx0XO5Ink&ab_channel=RealSPGHighlights"><img src="../img/nikola.jpg" height= 200  /> </a>
+
+
+
+### CLUSTER 2 - 3P Shooters
+
+#### Centroid
+
+| PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:------|:------|:------|:------|:------|:------|
+| -2.17 | 0.96  | -1.21 | 0.08  | -0.21 | 0.08  |
+
+
 
 
 #### Avg Stats
@@ -136,29 +181,78 @@ Typically associated with the position of point guards.
 
 | points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
 |:---------|:---------|:----------|:---------|:----------|:-----------|
-| 6.34     | 2.59     | 30.88     | 2.95     | 45.11     | 1.53       |
+| 7.79     | 3.82     | 37.28     | 2.63     | 49.17     | 1.14       |
+
 
 
 | free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
 |:------------|:----------|:----------|:----------|:--------|:---------|
-| 78.1        | 1.5       | 0.4       | 1.9       | 2.73    | 0.84     |
+| 80.97       | 1.67      | 0.49      | 2.16      | 1.03    | 0.53     |
+
 
 | turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
 |:------------|:------------|:------------|:--------|:-------------|
-| 1.64        | 0.05        | 0.23        | 0.03    | 2.03         |
+| 0.94        | 0.12        | 0.18        | 0.08    | 1.28         |
 
 
 
-Players in this cluster have great court vision and easily find a teammate to assist. Their pass skills outstands above other aspects like scoring. They mainly play outside the 3 point line. 
-Typically associated with the position of point guards. 
+Specialist in 3P shots. They try more 3P shots than 2P and have high conversion percentage. They tend to be open, ready to receive the ball and shoot with low ball usage (low PC3, low PC1, high PC2).
+
 
 
 #### Players in this Cluster:
 
 
-[Albert Oliver](http://www.acb.com/jugador/temporada-a-temporada/id/20200483)           |  [Facu Campazzo](http://www.acb.com/jugador/temporada-a-temporada/id/20211331) |  [Raül López](http://www.acb.com/jugador/temporada-a-temporada/id/20200628)
+[Brad Oleson](http://www.acb.com/jugador/temporada-a-temporada/id/20202105)           |  [Álex Abrines](http://www.acb.com/jugador/temporada-a-temporada/id/20209223) |  [Clay Tucker](http://www.acb.com/jugador/temporada-a-temporada/id/20200010)
 :-------------------------:|:-------------------------: |:-------------------------:
-<a href= "https://www.youtube.com/watch?v=jWROIfozUak&ab_channel=ACB"><img src="../img/oliver.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=HF1pwwPlMLo&ab_channel=ACB"><img src="../img/facu.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=s_AWH0ILOsY&ab_channel=ACB"><img src="../img/raul.jpg" height= 200  /> </a>
+<a href= "https://www.youtube.com/watch?v=l58qAp8_Yqs&ab_channel=ACB"><img src="../img/brad.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=G_HbcL9ft_E&ab_channel=ACB"><img src="../img/abrines.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=Dsu2H6oFuJs&ab_channel=dim183"><img src="../img/clay.jpg" height= 200  /> </a>
+
+
+
+
+### CLUSTER 3 - Hybrid Players
+
+#### Centroid
+
+| PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:------|:------|:------|:------|:------|:------|
+| 0.57  | 0.46  | -0.58 | -0.12 | 0.52  | -0.2  |
+
+
+
+
+#### Avg Stats
+
+
+| points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
+|:---------|:---------|:----------|:---------|:----------|:-----------|
+| 7.61     | 2.11     | 32.65     | 4.06     | 51.78     | 1.72       |
+
+
+
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 73.78       | 2.63      | 1.16      | 3.79      | 0.85    | 0.67     |
+
+
+| turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
+|:------------|:------------|:------------|:--------|:-------------|
+| 1.11        | 0.31        | 0.27        | 0.27    | 1.8          |
+
+
+
+
+Versatile players who can play in the paint or outside with great percentages in all ranges (not very extreme PCs). 
+
+
+
+#### Players in this Cluster:
+
+
+[Andrés Nocioni](http://www.acb.com/jugador/temporada-a-temporada/id/20200453)           |  [Axel Hervelle](http://www.acb.com/jugador/temporada-a-temporada/id/20201748) |  [Jorge Garbajosa](http://www.acb.com/jugador/temporada-a-temporada/id/20200999)
+:-------------------------:|:-------------------------: |:-------------------------:
+<a href= "https://www.youtube.com/watch?v=vnFu_X-_v34&ab_channel=ACB"><img src="../img/nocioni.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=f4lFD1vmJjk&ab_channel=ACB"><img src="../img/axel.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=JzYQNDzkxIo&ab_channel=KonBasket"><img src="../img/jorge.jpg" height= 200  /> </a>
+
 
 
 
