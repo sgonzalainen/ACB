@@ -83,7 +83,7 @@ By looking at the silhouette, distortion and calinski_harabasz scores, I finally
 
 ## Results
 
-### Cluster_0
+### CLUSTER 0 - Great Court Vision and Assist Leaders
 
 #### Centroid
 
@@ -94,6 +94,12 @@ By looking at the silhouette, distortion and calinski_harabasz scores, I finally
 
 #### Avg Stats
 
+
+| points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
+|:---------|:---------|:----------|:---------|:----------|:-----------|
+| 6.34     | 2.59     | 30.88     | 2.95     | 45.11     | 1.53       |
+
+
 | free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
 |:------------|:----------|:----------|:----------|:--------|:---------|
 | 78.1        | 1.5       | 0.4       | 1.9       | 2.73    | 0.84     |
@@ -102,9 +108,24 @@ By looking at the silhouette, distortion and calinski_harabasz scores, I finally
 |:------------|:------------|:------------|:--------|:-------------|
 | 1.64        | 0.05        | 0.23        | 0.03    | 2.03         |
 
-| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
-|:------------|:----------|:----------|:----------|:--------|:---------|
-| 69.28       | 3.12      | 1.74      | 4.85      | 0.86    | 0.65     |
+
+
+Players in this cluster have great court vision and easily find a teammate to assist. Their pass skills outstands above other aspects like scoring. They mainly play outside the 3 point line. 
+Typically associated with the position of point guards. 
+
+
+#### Players in this Cluster:
+
+
+[Albert Oliver](http://www.acb.com/jugador/temporada-a-temporada/id/20200483)           |  [Facu Campazzo](http://www.acb.com/jugador/temporada-a-temporada/id/20211331) |  [Raül López](http://www.acb.com/jugador/temporada-a-temporada/id/20200628)
+:-------------------------:|:-------------------------: |:-------------------------:
+<img src="../img/oliver.jpg" height= 200  />  |  <img src="../img/facu.jpg" height= 200  /> |  <img src="../img/raul.jpg" height= 200  />
+
+
+
+
+
+
 
 
 
