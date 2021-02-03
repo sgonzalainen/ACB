@@ -43,10 +43,10 @@ The feature `commited foults` was discarded since it produced a lot of impact wh
 
 Ok, so those 17 parameters features the players, but before applying clustering by Kmeans algorithm, a PCA pre-step is performed in order to mititage the [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality).
 
-But how many PCs? Let's keep the PCs that can attain at least the 80% of the variance. In this case was the first 6.
+But how many PCs? Let's keep the PCs that can attain at least the **80%** of the variance. In this case was the first **6 PCs**.
 
  <div style="text-align:center"><img src="../img/variance.jpg", height = 300px /></div>
- 
+
 
  |     | Var_exp_%   |
 |:----|:------------|
@@ -57,7 +57,7 @@ But how many PCs? Let's keep the PCs that can attain at least the 80% of the var
 | PC5 | 0.05        |
 | PC6 | 0.04        |
 
-The 1st PC retains 37% of total variance, the 2nd PC retains the 17%...
+The 1st PC retains **37%** of total variance, the 2nd PC retains the **17%**...
 
 Let's see the Eigen vector of each PC and try to get insights of it.
 
@@ -99,7 +99,7 @@ Based on above, it seems the first quality to classify players is whether they u
 
 Ok, now in the new feature space, Kmeans clustering is applied. But again, how many number of cluster do we set?
 
-By looking at the silhouette, distortion and calinski_harabasz scores, I finally ended up with **7** clusters.
+By looking at the silhouette, distortion and calinski_harabasz scores, I decided to stick with **7** clusters.
 
 <div style="text-align:center"><img src="../img/silhouette.jpg" height= 300  /></div>
 
@@ -355,7 +355,7 @@ Outside players (low PC1) who can easily score and contribute to the team (low P
 
 
 
-Low profile players in terms of stats (high PC2). They don't stand out in scoring, nor inside power, nor field goal percentages. They support their teammates in the game (medium PC4).
+Low profile players in terms of stats (high PC2). They don't stand out in scoring, nor inside power, nor field goal percentages. They support their teammates in the game (medium PC3).
 
 
 
@@ -408,6 +408,48 @@ Pure physical inside players (high PC1). Let's say they are the specialist of th
 [Edy Tavares](http://www.acb.com/jugador/temporada-a-temporada/id/20209407)           |  [Augusto Lima](http://www.acb.com/jugador/temporada-a-temporada/id/20200277) |  [Gustavo Ayón](http://www.acb.com/jugador/temporada-a-temporada/id/20200016)
 :-------------------------:|:-------------------------: |:-------------------------:
 <a href= "https://www.youtube.com/watch?v=71IyhVlpV-A&ab_channel=ACB"><img src="../img/tavares.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=tH_8-QFOX-0&t=22s&ab_channel=ACB"><img src="../img/lima.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=ArwXyXTlI3w&ab_channel=RealSPGHighlights"><img src="../img/ayon.jpg" height= 200  /> </a>
+
+
+## Visualization with TSNE
+
+Now that we have cluster the players into 7 clusters, let's visualize them by using TSNE algorithm.
+
+#### Reduced-dimension feature space
+
+First let's plot the clustering based on a reduced dimension feature space.
+
+<div style="text-align:center"><img src="../img/clusters__pc_tsne.jpg" height= 300  /></div>
+
+
+Inside game players (<span style="color:orange">Top Forwards</span> and <span style="color:pink">Pure Inside Players</span>) are located on top left corner looking like a macro cluster of inside gamer players.
+
+<span style="color:red">Hybrid Players</span>  are the connecting cluster between inside players and outside players.
+
+On the other hand, <span style="color:blue">Court Vision Leaders</span> and <span style="color:purple">Top Outside Players</span> seems to form another macro cluster of playmakers, being <span style="color:blue">Court Vision Leaders</span> the ones more isolated from other clusters.
+
+Connecting this playmaker cluster, we have the <span style="color:green">3-point Specialist</span> which seems to form another macro cluster of outside game players.
+
+Regarding <span style="color:brown">Support Players</span>, it is a small bridge cluster between <span style="color:red">Hybrid Players</span>  and the macro cluster of outside players. This makes sense as they don't contribute that much with points, nor rebounds nor assistances.
+
+
+#### Original feature space
+
+Finally, let's visulize our clusters in the original feature space. Let's keep in mind that when clustering there was a preprocess of PCA where we retained the 80% of variance. 
+
+
+<div style="text-align:center"><img src="../img/clusters_tsne.jpg" height= 300  /></div>
+
+
+Most of <span style="color:pink">Pure Inside Players</span> are clearly concretrated in a cluster of inside game players, but some <span style="color:orange">Top Forwards</span> are moved in more hybrid areas. It seems that within this <span style="color:orange">Top Forwards</span> cluster, there are players with a more pure inside profile than others. 
+
+
+<span style="color:red">Hybrid Players</span> are more or less located in the mid section connecting inside and outside players.
+
+In this case, <span style="color:blue">Court Vision Leaders</span>, <span style="color:purple">Top Outside Players</span> and <span style="color:green">3-point Specialist</span> are a bit mixed, specially <span style="color:blue">Court Vision Leaders</span> and <span style="color:green">3-point Specialist</span>.
+
+
+
+
 
 
 
