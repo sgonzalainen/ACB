@@ -46,14 +46,41 @@ Ok, so those 17 parameters features the players, but before applying clustering 
 But how many PCs? Let's keep the PCs that can attain at least the 80% of the variance. In this case was the first 6.
 
  <div style="text-align:center"><img src="../img/variance.jpg", height = 300px /></div>
+ 
 
- <div style="text-align:center"><img src="../img/vari.png",  /></div>
+ |     | Var_exp_%   |
+|:----|:------------|
+| PC1 | 0.37        |
+| PC2 | 0.17        |
+| PC3 | 0.1         |
+| PC4 | 0.07        |
+| PC5 | 0.05        |
+| PC6 | 0.04        |
 
 The 1st PC retains 37% of total variance, the 2nd PC retains the 17%...
 
 Let's see the Eigen vector of each PC and try to get insights of it.
 
- <div style="text-align:center"><img src="../img/eigenvectors.png",  /></div>
+
+|            | PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:-----------|:------|:------|:------|:------|:------|:------|
+| points     | 0.07  | -0.41 | -0.5  | -0.03 | -0.02 | 0.13  |
+| 3p_try     | -0.31 | -0.08 | -0.31 | -0.03 | 0.0   | -0.03 |
+| 3p_perc    | -0.26 | -0.09 | -0.34 | -0.15 | 0.25  | -0.17 |
+| 2p_try     | 0.28  | -0.26 | -0.09 | 0.18  | 0.12  | 0.22  |
+| 2p_perc    | 0.21  | 0.0   | -0.27 | -0.42 | -0.34 | 0.33  |
+| free_try   | 0.21  | -0.42 | -0.01 | 0.01  | -0.11 | -0.32 |
+| free_perc  | -0.18 | -0.23 | -0.29 | -0.05 | 0.1   | 0.03  |
+| reb_def    | 0.32  | 0.06  | -0.11 | -0.18 | 0.24  | -0.3  |
+| ref_att    | 0.35  | 0.11  | 0.03  | 0.07  | 0.14  | -0.14 |
+| reb_tot    | 0.36  | 0.09  | -0.05 | -0.08 | 0.21  | -0.25 |
+| assis      | -0.21 | -0.27 | 0.33  | -0.27 | -0.1  | 0.11  |
+| steals     | -0.04 | -0.14 | 0.26  | -0.52 | 0.66  | 0.22  |
+| turnovers  | 0.03  | -0.36 | 0.39  | -0.06 | -0.25 | 0.11  |
+| block_fav  | 0.29  | 0.13  | -0.03 | -0.16 | -0.14 | 0.15  |
+| block_con  | 0.14  | -0.23 | 0.04  | 0.56  | 0.33  | 0.42  |
+| dunks      | 0.32  | 0.05  | -0.07 | -0.19 | -0.11 | 0.31  |
+| foults_rec | 0.14  | -0.46 | 0.13  | -0.03 | -0.11 | -0.4  |
 
 
 And this is how I see them:
@@ -295,6 +322,99 @@ Outside players (low PC1) who can easily score and contribute to the team (low P
 [Luka Doncic](http://www.acb.com/jugador/temporada-a-temporada/id/20210121)           |  [Sergio Llull](http://www.acb.com/jugador/temporada-a-temporada/id/20201774) |  [Juan Carlos Navarro](http://www.acb.com/jugador/temporada-a-temporada/id/20200515)
 :-------------------------:|:-------------------------: |:-------------------------:
 <a href= "https://www.youtube.com/watch?v=v_jpqQBPDd8&ab_channel=ACB"><img src="../img/luka.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=WI0vsXFeZ9c&ab_channel=ACB"><img src="../img/sergi.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=UUUQuPAzBUk&ab_channel=EUROLEAGUEBASKETBALL"><img src="../img/bomba.jpg" height= 200  /> </a>
+
+
+
+### CLUSTER 5 - Support Players
+
+#### Centroid
+
+| PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:------|:------|:------|:------|:------|:------|
+| -1.39 | 2.42  | 0.96  | 0.62  | 0.04  | -0.45 |
+
+
+
+
+#### Avg Stats
+
+
+| points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
+|:---------|:---------|:----------|:---------|:----------|:-----------|
+| 4.39     | 2.24     | 25.99     | 2.39     | 40.69     | 0.95       |
+
+
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 61.55       | 1.83      | 0.81      | 2.64      | 0.92    | 0.57     |
+
+
+| turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
+|:------------|:------------|:------------|:--------|:-------------|
+| 1.02        | 0.18        | 0.17        | 0.07    | 1.19         |
+
+
+
+Low profile players in terms of stats (high PC2). They don't stand out in scoring, nor inside power, nor field goal percentages. They support their teammates in the game (medium PC4).
+
+
+
+#### Players in this Cluster:
+
+
+[Víctor Sada](http://www.acb.com/jugador/temporada-a-temporada/id/20201604)           |  [Albert Ventura](http://www.acb.com/jugador/temporada-a-temporada/id/20200247) |  [Edgar Vicedo](http://www.acb.com/jugador/temporada-a-temporada/id/20209139)
+:-------------------------:|:-------------------------: |:-------------------------:
+<a href= "https://www.youtube.com/watch?v=bd-Gl3b8n1Q&ab_channel=ACB"><img src="../img/sada.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=yBiXGXRuU5s&ab_channel=Penya1930"><img src="../img/ventura.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=tngiGbpnVos&ab_channel=ACB"><img src="../img/vicedo.jpg" height= 200  /> </a>
+
+
+
+### CLUSTER 6 - Pure Inside Players
+
+#### Centroid
+
+| PC1   | PC2   | PC3   | PC4   | PC5   | PC6   |
+|:------|:------|:------|:------|:------|:------|
+| 3.86  | 1.22  | 0.46  | -0.09 | -0.44 | 0.42  |
+
+
+
+
+#### Avg Stats
+
+
+| points   | 3p_try   | 3p_perc   | 2p_try   | 2p_perc   | free_try   |
+|:---------|:---------|:----------|:---------|:----------|:-----------|
+| 6.94     | 0.18     | 5.25      | 4.87     | 57.37     | 2.0        |
+
+
+| free_perc   | reb_def   | ref_att   | reb_tot   | assis   | steals   |
+|:------------|:----------|:----------|:----------|:--------|:---------|
+| 60.25       | 2.97      | 1.91      | 4.88      | 0.56    | 0.57     |
+
+
+| turnovers   | block_fav   | block_con   | dunks   | foults_rec   |
+|:------------|:------------|:------------|:--------|:-------------|
+| 1.25        | 0.81        | 0.31        | 0.76    | 1.92         |
+
+
+
+Pure physical inside players (high PC1). Let's say they are the specialist of the inside game, they rarely or never throw from the 3-point line due to its lack of aim at long distance.
+
+
+
+#### Players in this Cluster:
+
+
+[Edy Tavares](http://www.acb.com/jugador/temporada-a-temporada/id/20209407)           |  [Augusto Lima](http://www.acb.com/jugador/temporada-a-temporada/id/20200277) |  [Gustavo Ayón](http://www.acb.com/jugador/temporada-a-temporada/id/20200016)
+:-------------------------:|:-------------------------: |:-------------------------:
+<a href= "https://www.youtube.com/watch?v=71IyhVlpV-A&ab_channel=ACB"><img src="../img/tavares.jpg" height= 200  /> </a>  |  <a href= "https://www.youtube.com/watch?v=tH_8-QFOX-0&t=22s&ab_channel=ACB"><img src="../img/lima.jpg" height= 200  /> </a> | <a href= "https://www.youtube.com/watch?v=ArwXyXTlI3w&ab_channel=RealSPGHighlights"><img src="../img/ayon.jpg" height= 200  /> </a>
+
+
+
+
+
+
+
 
 
 
