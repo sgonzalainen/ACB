@@ -421,15 +421,15 @@ First let's plot the clustering based on a reduced dimension feature space.
 <div style="text-align:center"><img src="../img/clusters__pc_tsne.jpg" height= 300  /></div>
 
 
-Inside game players (<span style="color:orange">Top Forwards</span> and <span style="color:pink">Pure Inside Players</span>) are located on top left corner looking like a macro cluster of inside gamer players.
+Inside game players (<span style="color:orange">Top Forwards</span> ![#FFA533](https://via.placeholder.com/15/FFA533/000000?text=+) and <span style="color:pink">Pure Inside Players</span>) are located on top left corner looking like a macro cluster of inside gamer players.
 
-<span style="color:red">Hybrid Players</span>  are the connecting cluster between inside players and outside players.
+<span style="color:red">Hybrid Players</span> ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  are the connecting cluster between inside players and outside players.
 
-On the other hand, <span style="color:blue">Court Vision Leaders</span> and <span style="color:purple">Top Outside Players</span> seems to form another macro cluster of playmakers, being <span style="color:blue">Court Vision Leaders</span> the ones more isolated from other clusters.
+On the other hand, <span style="color:blue">Court Vision Leaders</span> ![#3339FF](https://via.placeholder.com/15/3339FF/000000?text=+) and <span style="color:purple">Top Outside Players</span> ![#6E33FF](https://via.placeholder.com/15/6E33FF/000000?text=+) seems to form another macro cluster of playmakers, being <span style="color:blue">Court Vision Leaders</span> ![#3339FF](https://via.placeholder.com/15/3339FF/000000?text=+) the ones more isolated from other clusters.
 
-Connecting this playmaker cluster, we have the <span style="color:green">3-point Specialist</span> which seems to form another macro cluster of outside game players.
+Connecting this playmaker cluster, we have the <span style="color:green">3-point Specialist</span> ![#2E9C4C](https://via.placeholder.com/15/2E9C4C/000000?text=+) which seems to form another macro cluster of outside game players.
 
-Regarding <span style="color:brown">Support Players</span>, it is a small bridge cluster between <span style="color:red">Hybrid Players</span>  and the macro cluster of outside players. This makes sense as they don't contribute that much with points, nor rebounds nor assistances.
+Regarding <span style="color:brown">Support Players</span> ![#663C14](https://via.placeholder.com/15/663C14/000000?text=+), it is a small bridge cluster between <span style="color:red">Hybrid Players</span> ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  and the macro cluster of outside players. This makes sense as they don't contribute that much with points, nor rebounds nor assistances.
 
 
 #### Original feature space
@@ -440,12 +440,27 @@ Finally, let's visulize our clusters in the original feature space. Let's keep i
 <div style="text-align:center"><img src="../img/clusters_tsne.jpg" height= 300  /></div>
 
 
-Most of <span style="color:pink">Pure Inside Players</span> are clearly concretrated in a cluster of inside game players, but some <span style="color:orange">Top Forwards</span> are moved in more hybrid areas. It seems that within this <span style="color:orange">Top Forwards</span> cluster, there are players with a more pure inside profile than others. 
+Most of <span style="color:pink">Pure Inside Players</span> are clearly concretrated in a cluster of inside game players, but some <span style="color:orange">Top Forwards</span> ![#FFA533](https://via.placeholder.com/15/FFA533/000000?text=+) are moved in more hybrid areas. It seems that within this <span style="color:orange">Top Forwards</span> ![#FFA533](https://via.placeholder.com/15/FFA533/000000?text=+) cluster, there are players with a more pure inside profile than others. 
 
 
-<span style="color:red">Hybrid Players</span> are more or less located in the mid section connecting inside and outside players.
+<span style="color:red">Hybrid Players</span> ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) are more or less located in the mid section connecting inside and outside players.
 
-In this case, <span style="color:blue">Court Vision Leaders</span>, <span style="color:purple">Top Outside Players</span> and <span style="color:green">3-point Specialist</span> are a bit mixed, specially <span style="color:blue">Court Vision Leaders</span> and <span style="color:green">3-point Specialist</span>.
+In this case, <span style="color:blue">Court Vision Leaders</span> ![#3339FF](https://via.placeholder.com/15/3339FF/000000?text=+), <span style="color:purple">Top Outside Players</span> ![#6E33FF](https://via.placeholder.com/15/6E33FF/000000?text=+) and <span style="color:green">3-point Specialist</span> ![#2E9C4C](https://via.placeholder.com/15/2E9C4C/000000?text=+) are a bit mixed, specially <span style="color:blue">Court Vision Leaders</span> ![#3339FF](https://via.placeholder.com/15/3339FF/000000?text=+) and <span style="color:green">3-point Specialist</span> ![#2E9C4C](https://via.placeholder.com/15/2E9C4C/000000?text=+).
+
+
+## Conclusions
+
+* Based on a dataset with very general game stats, we were able to somehow cluster basketball players by kmeans clustering with a PCA prestep.
+
+* The main feature to cluster basketball players is their inside game skill.
+
+* Based on the elbow method plots for determinig number of clusters, there were no well-defined clusters rather than perhaps dividing players between inside and outside players.
+
+* As shown in the last section, reducing feature space comes at a cost of losing some variance, in this case 20% for reducing from 17 to 6 dimensions.
+
+* Having a dataset with more specific data would help cluster better, for example: low-post shots, mid-range shots, pick and roll game, solo field goal percentage vs defended situations and much more.
+
+
 
 
 
