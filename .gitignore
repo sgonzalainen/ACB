@@ -129,8 +129,8 @@ dmypy.json
 .pyre/
 
 
-notebooks/
+notebooks/markdown.ipynb
+
 data/
 
 superado/
-
